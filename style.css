@@ -17,7 +17,11 @@ body {
   place-items: center;
   background-color: #0e0d0d;
 }
-
+.faixa {
+  visibility: hidden;
+  position: unset;
+  max-width: 0px;
+}
 main {
   background: url(images/Mobile.svg) no-repeat center/cover;
   width: 100vw;
@@ -84,4 +88,23 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+@media (min-width: 720px) {
+  main {
+    background: url(images/Mobile.svg);
+    margin-top: -150px;
+    width: 375px;
+    height: 712px;
+    min-height: 712px;
+  }
+  ul {
+    margin-top: 1rem;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    background-color: var(--black);
+  }
 }
